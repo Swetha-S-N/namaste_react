@@ -14,13 +14,16 @@ console.log(jsxheading);
 
 //Functional Component
 
-const HeadingComponent = () => {
-    return <h1>Namaste React From Functional Component</h1>
+const Title = () => {
+    return <h1>Namaste React From Functional Component Title</h1>
 };
 
-const HeadingComponentTwo = () => (
-    <div>
-        <h1>Namaste React From Functional Component</h1>
-    </div>
-);
+const HeadingComponentTwo = function () {
+    return (
+        <div>
+            <Title />
+            <h1>Namaste React From Functional Component</h1>
+        </div>
+    );
+}
 root.render(<HeadingComponentTwo />);
